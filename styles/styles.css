@@ -1,5 +1,7 @@
 :root {
   --font-dm-sans: "DM Sans", sans-serif;
+  --light-gray-text-color: #9ca3af;
+  --dark-gray-bg-color: rgba(243, 244, 246, 0.5);
 }
 
 body {
@@ -39,6 +41,18 @@ input::placeholder {
   border-left: none !important;
 }
 
-.ratings {
+.fs-12 {
   font-size: 12px !important;
+}
+
+.poster-img {
+  width: 450px !important;
+}
+
+.light-gray {
+  color: var(--light-gray-text-color) !important;
+}
+
+.dark-gray {
+  background-color: var(--dark-gray-bg-color) !important;
 }
