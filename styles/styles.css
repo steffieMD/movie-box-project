@@ -1,16 +1,40 @@
+:root {
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-dm-sans) !important;
+}
+
 input::placeholder {
   color: #fff !important;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
 .poster {
   background-image: url("/media/svg/john-wick-Poster.svg");
   background-position: center;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 200px;
   height: 600px;
 }
 
 .nav-text-color {
   color: #fff !important;
+}
+
+.search-bar {
+  border: 1px solid #fff !important;
+  border-radius: 6px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right: none !important;
+}
+
+.search-btn {
+  border: 1px solid #fff !important;
+  border-radius: 6px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-left: none !important;
 }

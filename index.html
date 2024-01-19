@@ -14,30 +14,42 @@
       src="https://kit.fontawesome.com/95337dbfa0.js"
       crossorigin="anonymous"
     ></script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
     <title>Moviebox Hompage</title>
   </head>
   <body>
-    <nav class="container-fluid fixed-top pt-3">
-      <div class="container-fluid d-flex justify-content-between">
-        <a class="d-flex text-decoration-none" href="index.html">
-          <img src="media/svg/moviebox-logo.svg" alt="moviebox logo" />
-          <h3 class="fs-3 mt-2 ms-2 text-light">MovieBox</h3>
-        </a>
-        <form class="d-flex border rounded" role="search">
-          <input
-            class="me-2 border-0 pe-5 ps-2 bg-transparent text-light"
-            type="search"
-            placeholder="What do you want to watch?"
-            aria-label="Search"
-          />
-          <button class="btn text-light ps-5" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-
-        <div class="">
-          <a href="#">Sign In</a>
+    <nav class="container-fluid fixed-top pt-2 d-flex justify-content-center">
+      <div class="container row ">
+        <div class="col-sm-4 pb-2 p-0">
+          <a class="d-flex text-decoration-none" href="index.html">
+            <img
+              class="img-fluid"
+              src="media/svg/moviebox-logo.svg"
+              alt="moviebox logo"
+            />
+            <h3 class="fs-6 align-self-center text-light ps-2">MovieBox</h3>
+          </a>
+        </div>
+        <div class="col-sm-4 pb-2 p-0">
+          <form
+            class="d-flex   rounded mt-1"
+            role="search"
+          >
+            <input
+              class=" bg-transparent ms-2 p-2 search-bar text-light fs-6"
+              type="search"
+              placeholder="What do you want to watch?"
+              aria-label="Search"
+            />
+            <button class="btn text-light search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-sm-4 d-flex p-0 justify-content-end pb-2 pt-1">
+          <a href="#" class="align-self-center text-decoration-none text-light pe-2">Sign In</a>
           <button
             class="rounded-circle bg-danger border-0 py-2 px-3"
             type="button"
@@ -48,17 +60,21 @@
       </div>
     </nav>
     <div class="container-fluid poster text-light">
-      <h1 class="display-4">John Wick 3 : Parabellum</h1>
+        <div class="container">
+           <h1 class="display-5">John Wick 3 : Parabellum</h1>
       <div></div>
-      <p>
-        John Wick is on the run after killing a member of the international
-        assassins' guild, and with a $14 million price tag on his head, he is
-        the target of hit men and women everywhere.
-      </p>
+      <p class="fs-6"><small>John Wick is on the run after killing a member <br />
+        of the international assassins' guild, and with <br />
+        a $14 million price tag on his head, he is the <br />
+        target of hit men and women everywhere.
+      </p></small>
+        
       <button>
         <i class="fa-solid fa-circle-play"></i>
         WATCH TRAILER
-      </button>
+      </button> 
+        </div>
+      
     </div>
   </body>
   <script
