@@ -22,7 +22,7 @@
   <body>
     <nav class="container-fluid fixed-top pt-2 d-flex justify-content-center">
       <div class="container row ">
-        <div class="col-sm-4 pb-2 p-0">
+        <div class="col-md-4 pb-2 p-0">
           <a class="d-flex text-decoration-none" href="index.html">
             <img
               class="img-fluid"
@@ -32,13 +32,13 @@
             <h3 class="fs-6 align-self-center text-light ps-2">MovieBox</h3>
           </a>
         </div>
-        <div class="col-sm-4 pb-2 p-0">
+        <div class="col-md-4 col-sm-12 pb-2 p-0">
           <form
-            class="d-flex   rounded mt-1"
+            class="d-flex rounded mt-1"
             role="search"
           >
             <input
-              class=" bg-transparent ms-2 p-2 search-bar text-light fs-6"
+              class=" bg-transparent p-2 search-bar text-light fs-6"
               type="search"
               placeholder="What do you want to watch?"
               aria-label="Search"
@@ -48,7 +48,7 @@
             </button>
           </form>
         </div>
-        <div class="col-sm-4 d-flex p-0 justify-content-end pb-2 pt-1">
+        <div class="col-md-4 d-flex p-0 justify-content-end pb-2 pt-1">
           <a href="#" class="align-self-center text-decoration-none text-light pe-2">Sign In</a>
           <button
             class="rounded-circle bg-danger border-0 py-2 px-3"
@@ -60,16 +60,25 @@
       </div>
     </nav>
     <div class="container-fluid poster text-light">
-        <div class="container">
-           <h1 class="display-5">John Wick 3 : Parabellum</h1>
-      <div></div>
-      <p class="fs-6"><small>John Wick is on the run after killing a member <br />
+        <div class="container col-sm-5 offset-sm-1">
+           <h1 class="display-4 fw-bold">John Wick 3 : <br> Parabellum</h1>
+      <div class="container col-sm-7 offset-sm-0  p-0 d-flex">
+        <div class="imdb-ratings col-sm-7 ">
+            <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-2">
+            <small class="ratings">86.0/100</small>
+        </div>
+        <div class="rotten-tomato-ratings col-sm-5  ps-3">
+            <img src="media/svg/rotten-tomatoes-icon.svg" alt="rotten tomatoes icon" class="img-fluid pe-1">
+            <small class="ratings">97%</small>
+        </div>
+      </div>
+      <p class="fs-6 pt-2"><small>John Wick is on the run after killing a member <br />
         of the international assassins' guild, and with <br />
         a $14 million price tag on his head, he is the <br />
         target of hit men and women everywhere.
       </p></small>
         
-      <button>
+      <button class="btn bg-danger text-light">
         <i class="fa-solid fa-circle-play"></i>
         WATCH TRAILER
       </button> 

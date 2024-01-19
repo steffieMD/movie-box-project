@@ -15,8 +15,8 @@ input::placeholder {
   background-image: url("/media/svg/john-wick-Poster.svg");
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  height: 600px;
+  padding-top: 250px;
+  height: 800px;
 }
 
 .nav-text-color {
@@ -37,4 +37,8 @@ input::placeholder {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border-left: none !important;
+}
+
+.ratings {
+  font-size: 12px !important;
 }
