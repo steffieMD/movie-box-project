@@ -37,6 +37,8 @@
           <form
             class="d-flex rounded mt-1"
             role="search"
+            id="form"
+            name="search-form"
           >
             <input
               class=" bg-transparent p-2 search-bar text-light fs-6"
@@ -64,9 +66,9 @@
       </div>
     </nav>
     <div class="container-fluid poster text-light">
-        <div class="container border col-sm-7 offset-sm-1">
+        <div class="container col-sm-7 offset-sm-1">
            <h1 class="display-4 fw-bold" id="main-poster">John Wick 3 : <br> Parabellum</h1>
-      <div class="container col-sm-7 offset-sm-0  p-0 d-flex">
+      <div class="container col-sm-5 offset-sm-0  p-0 d-flex">
         <div class="imdb-fs-10 col-sm-7 ">
             <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-2">
             <small class="fs-10">86.0/100</small>
@@ -76,7 +78,7 @@
             <small class="fs-10">97%</small>
         </div>
       </div>
-      <p class="fs-6 pt-2"><small id="main-poster-overview">John Wick is on the run after killing a member <br />
+      <p class="fs-6 pt-2 col-sm-8"><small id="main-poster-overview">John Wick is on the run after killing a member <br />
         of the international assassins' guild, and with <br />
         a $14 million price tag on his head, he is the <br />
         target of hit men and women everywhere.
@@ -98,16 +100,18 @@
     <div class="row container  my-0 mx-auto p-0">
         <div class="col-sm-3 px-3 pb-5">
             <div class="position-relative border">
-                <div class="position-absolute top-0 start-0  rounded-pill dark-gray mt-2 ms-2 py-1 px-2 bg-opacity-25">
+                <div class="position-absolute top-0 start-0  rounded-pill bg-secondary mt-2 ms-2 py-1 px-2 bg-opacity-75">
                     <span class="fs-10 text-dark ">TV SERIES</span>
                 </div>
-                <div class="position-absolute top-0 end-0  rounded-circle  dark-gray mt-2 me-2 px-2 py-1">
+                <div class="position-absolute top-0 end-0  rounded-circle  bg-secondary bg-opacity-75 mt-2 me-2 px-2 py-1">
                     <i class="fa-solid fa-heart text-light"></i>
                 </div>
             </div>
-            <img src="media/svg/stranger-things-poster.svg" alt="stranger things poster" class="img-fluid poster-img">
-            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2016 - Current</p>
-            <h6 class="pt-1 fs-14 fw-bold">Stranger Things</h6>
+            <img src="media/svg/stranger-things-poster.svg" alt="stranger things poster" 
+            id="st-poster"
+            class="img-fluid poster-img">
+            <p class="fs-10 pt-2 mb-1 fw-bold  light-gray" id="st-production-country">USA, 2016 - Current</p>
+            <h6 class="pt-1 fs-14 fw-bold" id="st-movie-title">Stranger Things</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -118,7 +122,7 @@
                     <small class="fs-10">97%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Horror</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="st-genre">Action, Adventure, Horror</p>
             
         </div>
         <div class="col-sm-3 px-3 pb-5 ">
@@ -129,7 +133,7 @@
             </div>
             <img src="media/svg/batman-begins.svg" alt="batman begins poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2005</p>
-            <h6 class="pt-1 fs-14 fw-bold">Batman Begins</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Batman Begins</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -140,7 +144,7 @@
                     <small class="fs-10">70%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -151,7 +155,7 @@
             </div>
             <img src="media/svg/spiderman-into-the-spiderverse.svg" alt="Spider-Man : Into The Spider Verse poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2018</p>
-            <h6 class="pt-1 fs-14 fw-bold">Spider-Man : Into The Spider Verse</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Spider-Man : Into The Spider Verse</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -173,7 +177,7 @@
             </div>
             <img src="media/svg/dunkirk.svg" alt="Dunkirk poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2017</p>
-            <h6 class="pt-1 fs-14 fw-bold">Dunkirk</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Dunkirk</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -184,7 +188,7 @@
                     <small class="fs-10">94%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Drama, History</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Drama, History</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -195,7 +199,7 @@
             </div>
             <img src="media/svg/dune-poster.svg" alt="Dune poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Dune</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Dune</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -206,7 +210,7 @@
                     <small class="fs-10">75%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Drama</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Drama</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -217,7 +221,7 @@
             </div>
             <img src="media/svg/no-time-to-die-poster.svg" alt="No Time To Die poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">No Time To Die</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">No Time To Die</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -228,7 +232,7 @@
                     <small class="fs-10">68%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Thriller</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Thriller</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -239,7 +243,7 @@
             </div>
             <img src="media/svg/shang-chi.svg" alt="Shang-Chi and the Legend of the Ten Rings poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Shang-Chi and the Legend of the Ten Rings</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Shang-Chi and the Legend of the Ten Rings</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -250,7 +254,7 @@
                     <small class="fs-10">71%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Fantasy</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Fantasy</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -261,7 +265,7 @@
             </div>
             <img src="media/svg/dont-breathe-2-poster.svg" alt="Don't Breathe 2 poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Don't Breathe 2</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Don't Breathe 2</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -272,7 +276,7 @@
                     <small class="fs-10">46%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Drama, Horror </p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Drama, Horror </p>
             
         </div>
           <div class="col-sm-3 px-3 pb-5 ">
@@ -283,7 +287,7 @@
             </div>
             <img src="media/svg/dune-poster.svg" alt="Dune poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Dune</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Dune</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -294,7 +298,7 @@
                     <small class="fs-10">75%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Drama</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Drama</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -305,7 +309,7 @@
             </div>
             <img src="media/svg/no-time-to-die-poster.svg" alt="No Time To Die poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">No Time To Die</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">No Time To Die</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -316,7 +320,7 @@
                     <small class="fs-10">68%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Thriller</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Thriller</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -327,7 +331,7 @@
             </div>
             <img src="media/svg/shang-chi.svg" alt="Shang-Chi and the Legend of the Ten Rings poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Shang-Chi and the Legend of the Ten Rings</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Shang-Chi and the Legend of the Ten Rings</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -338,7 +342,7 @@
                     <small class="fs-10">71%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Adventure, Fantasy</p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Adventure, Fantasy</p>
             
         </div>
          <div class="col-sm-3 px-3 pb-5 ">
@@ -349,7 +353,7 @@
             </div>
             <img src="media/svg/dont-breathe-2-poster.svg" alt="Don't Breathe 2 poster" class="img-fluid poster-img">
             <p class="fs-10 pt-2 mb-1 fw-bold  light-gray">USA, 2021</p>
-            <h6 class="pt-1 fs-14 fw-bold">Don't Breathe 2</h6>
+            <h6 class="pt-1 fs-14 fw-bold" id="movie-title">Don't Breathe 2</h6>
             <div class="container  p-0 d-flex justify-content-between pt-1">
                 <div class=" d-flex">
                     <img src="media/svg/imdb-logo.svg" alt="imdb logo" class="img-fluid pe-1">
@@ -360,7 +364,7 @@
                     <small class="fs-10">46%</small>
                 </div>
             </div>
-            <p class="fs-10 pt-2 fw-bold light-gray">Action, Drama, Horror </p>
+            <p class="fs-10 pt-2 fw-bold light-gray"id="genre">Action, Drama, Horror </p>
             
         </div>
            
