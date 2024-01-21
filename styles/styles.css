@@ -2,16 +2,28 @@
   --font-dm-sans: "DM Sans", sans-serif;
   --light-gray-text-color: #9ca3af;
   --dark-gray-bg-color: rgba(243, 244, 246, 0.5);
+  --font-poppins: "Poppins", sans-serif;
+  --bg-color-light-red: rgba(190, 18, 60, 0.7);
 }
 
 body {
-  font-family: var(--font-dm-sans) !important;
-  background-color: #f4f5f7 !important;
+  background-color: rgba(248, 231, 235, 0.4) !important;
 }
 
 input::placeholder {
   color: #c3bcbc !important;
-  /* font-size: 12px; */
+}
+
+nav li {
+  font-weight: 600 !important;
+}
+
+.vertical-nav {
+  height: 100% !important;
+  /* width: auto !important; */
+  border-radius: 45px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
 
 .poster {
@@ -42,6 +54,10 @@ input::placeholder {
   border-left: none !important;
 }
 
+.fs-8 {
+  font-size: 8px !important;
+}
+
 .fs-10 {
   font-size: 10px !important;
 }
@@ -60,4 +76,47 @@ input::placeholder {
 
 .dark-gray {
   background-color: var(--dark-gray-bg-color) !important;
+}
+
+.ff-dm-Sans {
+  font-family: var(--font-dm-sans);
+}
+
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.active {
+  background-color: rgba(190, 18, 60, 0.1);
+  border-right: 5px solid #be123c;
+}
+
+.navbar-btn {
+  background-color: rgba(190, 18, 60, 0.2);
+  color: #be123c;
+  border: 1px solid rgba(190, 18, 60, 0.2);
+}
+
+.bg-color-light-red {
+  border-radius: 20px;
+  background-color: #f8e7eb;
+  border: 1px solid var(--bg-color-light-red);
+}
+
+@media (max-width: 560px) {
+  .movie-pg-logo {
+    width: 25px;
+  }
+
+  .movie-page-brand-name {
+    font-size: 0.7rem !important;
+  }
+
+  .navbar-link {
+    font-size: 0.7rem !important;
+  }
+
+  .fss-6 {
+    font-size: 0.7rem;
+  }
 }
