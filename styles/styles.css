@@ -4,6 +4,7 @@
   --dark-gray-bg-color: rgba(243, 244, 246, 0.5);
   --font-poppins: "Poppins", sans-serif;
   --bg-color-light-red: rgba(190, 18, 60, 0.7);
+  --dark-red: #be123c;
 }
 
 body {
@@ -88,12 +89,12 @@ nav li {
 
 .active {
   background-color: rgba(190, 18, 60, 0.1);
-  border-right: 5px solid #be123c;
+  border-right: 5px solid var(--dark-red);
 }
 
 .navbar-btn {
   background-color: rgba(190, 18, 60, 0.2);
-  color: #be123c;
+  color: var(--dark-red);
   border: 1px solid rgba(190, 18, 60, 0.2);
 }
 
@@ -101,6 +102,28 @@ nav li {
   border-radius: 20px;
   background-color: #f8e7eb;
   border: 1px solid var(--bg-color-light-red);
+}
+
+.genre-btn {
+  border-radius: 75px;
+  font-size: 8px;
+  padding: 5px;
+  color: var(--dark-red);
+  background-color: transparent;
+  border: 1px solid rgba(190, 18, 60, 0.2);
+}
+
+.navbar-link:hover {
+  background-color: rgba(190, 18, 60, 0.1);
+  border-right: 5px solid var(--dark-red);
+}
+
+.text-light-red {
+  color: var(--dark-red) !important;
+}
+
+.bg-dark-red {
+  background-color: var(--dark-red) !important;
 }
 
 @media (max-width: 560px) {
